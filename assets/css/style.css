@@ -1,0 +1,127 @@
+/*body*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+/*End body*/
+
+/* content*/
+.page-content{
+      min-height: calc(100vh - 180px);
+}
+/*end content*/
+
+/*Home Page*/
+.callout-container {
+  background: url("../image/landingpage.jpg") no-repeat bottom right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: dimgrey;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+}
+#landing-pg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../image/landingpage.jpg') center center / cover no-repeat fixed;
+}
+
+#landing-pg-container {
+    text-align: center;
+
+}
+
+#landing-text {
+    font-family: 'neon-stream', sans-serif;
+    font-size: 60px;
+    color: #F2E871;
+    text-shadow: 10px 10px 40px #EFEAE2D6;
+    margin-bottom: 50px;
+    margin-top: 20%; 
+}
+
+
+h1#landing-text::before, h1#landing-text::after {
+    content: '';
+    height: 0.07em;
+    width: 70%;
+    background-color: #A7EBDC;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+#landing-btn {
+    
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fafafa;
+    font-family: 'Exo',sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#landing-btn:hover {
+    background-color: #2B3256;
+    
+}
+
+
+/* For desktop/iPad screens (768px and bigger) */
+@media screen and (min-width:768px) {
+    #landing-text {
+        font-size: 100px;
+    }
+
+    #landing-pg {
+        background: url('../images/landingpage.jpg') center center / cover no-repeat fixed;
+    }
+}
+
+/*End home page*/
+
+/*footer*/
+.footer {
+  background-color:#8f8f8f 
+  color: #fafafa;
+  min-height: 100px;
+  width: 100%;
+  bottom: 0px;
+  margin-top: auto;
+}
+.social-links {
+  padding-bottom: 15px;
+}
+.social-links li a i {
+  width: 32px;
+  height: 32px;
+  padding: 12px 0;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 7px;
+  text-align: center;
+  color: #fafafa;
+  background: #8f8f8f;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+.social-links li a i:hover {
+  background: #e84610;
+}
+#footer-details {
+  padding: 10px;
+  font-family: "Expo";
+  text-align: center;
+}
+/*End Footer*/
+
+a {
+  color: white;
+}
+/*End Button*/
