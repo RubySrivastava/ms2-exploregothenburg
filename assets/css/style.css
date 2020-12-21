@@ -6,7 +6,7 @@ body {
 
 /* content*/
 .page-content{
-      min-height: calc(100vh - 180px);
+      min-height: calc(100vh - 56px);
 }
 /*end content*/
 
@@ -23,55 +23,50 @@ body {
   justify-content: center;
   position: relative;
 }
-#landing-pg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('../image/landingpage.jpg') center center / cover no-repeat fixed;
-}
-
-#landing-pg-container {
-    text-align: center;
-
+.gallery-img{
+display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
 }
 
 #landing-text {
-    font-family: 'neon-stream', sans-serif;
-    font-size: 60px;
-    color: #F2E871;
+    color: #fafafa;
+    font-family: 'Exo',sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
     text-shadow: 10px 10px 40px #EFEAE2D6;
     margin-bottom: 50px;
     margin-top: 20%; 
 }
 
 
-h1#landing-text::before, h1#landing-text::after {
-    content: '';
-    height: 0.07em;
-    width: 70%;
-    background-color: #A7EBDC;
-    border-radius: 5px;
-    display: block;
-    margin: auto;
+.container-signup {
+  background: url("../image/landingpage.jpg") no-repeat bottom right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: dimgray;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+}
+/*End Sign up Page*/
+.login-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem 1rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  min-width: 300px;
+  font-family: "expo";
+  color: white;
 }
 
-#landing-btn {
-    
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #fafafa;
-    font-family: 'Exo',sans-serif;
-    text-transform: uppercase;
-    font-size: 30px;
-}
 
-#landing-btn:hover {
-    background-color: #2B3256;
-    
-}
-
-
-/* For desktop/iPad screens (768px and bigger) */
+/* For desktop/iPad screens (768px and bigger) 
 @media screen and (min-width:768px) {
     #landing-text {
         font-size: 100px;
@@ -81,12 +76,42 @@ h1#landing-text::before, h1#landing-text::after {
         background: url('../images/landingpage.jpg') center center / cover no-repeat fixed;
     }
 }
-
+*/
 /*End home page*/
+/*Header*/
+.navbar {
+  margin-bottom: 0;
+  width: 100%;
+  background-color:#8f8f8f;
+  border: 0;
+  display: flex !important;
+  padding-left: 0.6rem;
+}
 
+.navbar .navbar-brand {
+  font-family: "Expo";
+  font-weight: bold;
+  font-size: 20px;
+}
+.navbar .navbar-toggler {
+  border: 0;
+}
+.navbar .navbar-nav a {
+  font-weight: bold;
+}
+.ml-auto {
+  margin-left: inherit;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+/*End Header*/
 /*footer*/
 .footer {
-  background-color:#8f8f8f 
+  background-color:#8f8f8f; 
   color: #fafafa;
   min-height: 100px;
   width: 100%;
