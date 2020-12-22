@@ -78,6 +78,32 @@ display: flex;
 }
 */
 /*End home page*/
+/* --- GALLERY PAGE--- */
+
+.image img {
+	margin: 8px 0px;
+	    -webkit-box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow);
+}
+
+#gallery i {
+	font-size: 150%;
+	color: var(--primary-bg-clr);
+}
+
+.carousel-indicators {
+	margin-bottom: 20px;
+}
+
+.carousel-indicators li {
+	background-color: var(--primary-bg-clr);
+}
+
+.carousel-inner {
+	    -webkit-box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow);
+	border-radius: 8px;
+}
 /*Header*/
 .navbar {
   margin-bottom: 0;

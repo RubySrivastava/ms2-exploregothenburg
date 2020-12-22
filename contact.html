@@ -29,7 +29,16 @@
 	<!--font family-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
 	<!--stylesheet-->
-	<link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_HB4HzQzv7UDZdJ7tUoKjZ");
+                 
+   })();
+</script>
 	<title>Gym</title>
 </head>
 
@@ -81,32 +90,16 @@
       <div class="row ">
         <div class="col-12">
           <section class="callout login-box text-center">
-            <form>
+            <form onsubmit = "return sendMail(this);">
               <div>
                 <h1>Message for more information!</h1>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-12">
-                  <input type="text-input" class="form-control" id="inputName" placeholder="Full Name"/>
-                </div>
+              <div>
+                <input type="text" name="name" class="form-control mb-3" id="fullname" placeholder="Name" required/>
+                    <input type="email" name="emailaddress" class="form-control mb-3" id="emailaddress" placeholder="Email" required/>
+                    <textarea rows="5" name="message" class="form-control mb-3" id="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Submit</button>
               </div>
-              <div class="form-group row">
-                <div class="col-sm-12">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email Address"/>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-12">
-                  <input type="text-input" class="form-control" id="message" rows="20" minlength="10" placeholder="Message"/>
-                </div>
-              </div>
-              
-              <div class="form-group row">
-                <div class="col-sm-12">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </div>
-              
             </form>
           </section>
         </div>
@@ -166,7 +159,8 @@
 			</div>
 		</div>
 	</footer>
-	<!--footer-->
+    <!--footer-->
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
