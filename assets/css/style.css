@@ -12,7 +12,7 @@ body {
 
 /*Home Page*/
 .callout-container {
-  background: url("../image/landingpage.jpg") no-repeat bottom right;
+  background: url("../image/hero-image.jpg") no-repeat bottom right;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -107,7 +107,7 @@ display: flex;
 /*Membership Page*/
 .card-img {
   width: 100%;
-  height: 300px;
+  
   border-radius: calc(0.25rem - 1px);
   margin-top: 20px;
   padding-top: 50px;
@@ -117,7 +117,7 @@ display: flex;
 }
 .overlay-card {
   width: 100%;
-  height: 300px;
+  height: 800px;
   border-radius: calc(0.25rem - 1px);
 }
 .card-img-overlay {
@@ -155,7 +155,8 @@ div#map {min-height: 360px;}
 .navbar {
   margin-bottom: 0;
   width: 100%;
-  background-color:#4795b9;
+  background-color:#4892A6
+  ;
   border: 0;
   display: flex !important;
   padding-left: 0.6rem;
