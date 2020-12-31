@@ -23,7 +23,6 @@ body {
   justify-content: center;
   position: relative;
 }
-
 #landing-text {
     color: #ffffff;
     font-family: 'Expo',sans-serif;
@@ -41,16 +40,8 @@ body {
   }
 }
 /*End Home Page*/
-.gallery-img{
-display: flex;
-  height: 100vh;
-  justify-content: center;
-  position: relative;
-}
 
-
-
-
+/*Contact Page*/
 .message-container {
   background: url("../image/contact.jpg") no-repeat bottom right;
   -webkit-background-size: cover;
@@ -63,9 +54,8 @@ display: flex;
   justify-content: center;
   position: relative;
 }
-/*End Sign up Page*/
 .message-box {
-  background-color: rgba(117,213,223, 0.5);
+  background-color: rgba(00,42,78,0.5);
   padding: 2rem 1rem;
   margin-top: 6rem;
   margin-bottom: 2rem;
@@ -74,8 +64,161 @@ display: flex;
   font-family: "expo";
   color: white;
 }
+.header-form {
+    font-size:20px;
+}
+/*End Contact Page*/
+
+/*About Gothenburg Page*/
+.card-img {
+  width: 100%;
+  border-radius: calc(0.25rem - 1px);
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.overlay-card {
+  width: 100%;
+  height: 800px;
+  border-radius: calc(0.25rem - 1px);
+}
+.card-img-overlay {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+  font-size: 60px;
+  font-family: "Expo";
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+}
+.card-img-top {
+  width: 100%;
+  height: 400px;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  margin: 0px;
+  padding: 10px;
+}
+.card-body {
+  color:#ffffff;
+  font-family: "Expo";
+}
+.card-title {
+  margin-top: 80px;
+  margin-bottom: 0.75rem;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Expo";
+}
+.card-text {
+    margin-top:20px;
+    font-size:20px;
+    font-family:"Expo";
+}
+/*End About Gothenburg Page*/
+
+/*Explore Map*/
+div#map {min-height: 360px;}
+/*End explore map*/
+
+/*Header*/
+.navbar {
+  margin-bottom: 0;
+  width: 100%;
+  background-color:#002a4e;
+  border: 0;
+  display: flex !important;
+  padding-left: 0.6rem;
+}
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-family: "Expo";
+  font-weight: bold; 
+}
+.navbar .navbar-toggler {
+  border: 0;
+}
+.navbar .navbar-nav a {
+  font-weight: bold;
+}
+.ml-auto {
+  margin-left: inherit;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  .navbar-brand {
+    font-size: 20px;
+  }
+}
+/*End Header*/
+
+/*footer*/
+.footer {
+  background-color:#002a4e; 
+  color: #fafafa;
+  min-height: 100px;
+  width: 100%;
+  bottom: 0px;
+  margin-top: auto;
+}
+.social-links {
+  padding-bottom: 10px;
+}
+.social-links li a i {
+  width: 32px;
+  height: 32px;
+  padding: 10px 0;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 7px;
+  text-align: center;
+  color: #fafafa;
+  background: #8f8f8f;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+.social-links li a i:hover {
+  background: #e84610;
+}
+#footer-details {
+  padding: 10px;
+  font-family: "Expo";
+  text-align: center;
+}
+/*End Footer*/
+
+/*Button*/
+.btn--cta {
+  font-weight: bold;
+  border-radius: 15px;
+  width: 120px;
+}
+.btn--cta:hover {
+    color: white;
+}
+.btn-blue {
+    background-color: #002a4e;
+}
+/*End Button*/
 
 
+.gallery-img{
+display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+}
 /* For desktop/iPad screens (768px and bigger) 
 @media screen and (min-width:768px) {
     #landing-text {
@@ -114,134 +257,4 @@ display: flex;
 	box-shadow: var(--box-shadow);
 	border-radius: 8px;
 }
-/*Membership Page*/
-.card-img {
-  width: 100%;
-  
-  border-radius: calc(0.25rem - 1px);
-  margin-top: 20px;
-  padding-top: 50px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.overlay-card {
-  width: 100%;
-  height: 800px;
-  border-radius: calc(0.25rem - 1px);
-}
-.card-img-overlay {
-  position: absolute;
-  top: 20px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1.25rem;
-  font-size: 30px;
-  font-family: "Expo";
-  align-items: center;
-  text-align: center;
-}
-.card-img-top {
-  width: 100%;
-  height: 400px;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-  margin: 0px;
-  padding: 10px;
-}
-.card-body {
-  color: black;
-  font-family: "Expo";
-}
-.card-title {
-  margin-top: 80px;
-  margin-bottom: 0.75rem;
-  font-size: 40px;
-  font-family: "Expo";
-}
-div#map {min-height: 360px;}
 
-
-/*Header*/
-.navbar {
-  margin-bottom: 0;
-  width: 100%;
-  background-color:#002a4e;
-  border: 0;
-  display: flex !important;
-  padding-left: 0.6rem;
-}
-.navbar-brand {
-  font-family: "Expo";
-  font-weight: bold;
-  font-size: 30px;
-}
-.navbar  {
-  font-family: "Expo";
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.navbar .navbar-toggler {
-  border: 0;
-}
-.navbar .navbar-nav a {
-  font-weight: bold;
-}
-.ml-auto {
-  margin-left: inherit;
-}
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-  .navbar-brand {
-    font-size: 20px;
-  }
-}
-/*End Header*/
-
-
-/*footer*/
-.footer {
-  background-color:#002a4e; 
-  color: #fafafa;
-  min-height: 100px;
-  width: 100%;
-  bottom: 0px;
-  margin-top: auto;
-}
-.social-links {
-  padding-bottom: 10px;
-}
-.social-links li a i {
-  width: 32px;
-  height: 32px;
-  padding: 10px 0;
-  border-radius: 50%;
-  font-size: 20px;
-  line-height: 7px;
-  text-align: center;
-  color: #fafafa;
-  background: #8f8f8f;
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-}
-.social-links li a i:hover {
-  background: #e84610;
-}
-#footer-details {
-  padding: 10px;
-  font-family: "Expo";
-  text-align: center;
-}
-/*End Footer*/
-/*
-a {
-  color: white;
-}
-End Button*/
