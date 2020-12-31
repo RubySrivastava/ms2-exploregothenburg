@@ -4,11 +4,11 @@ body {
 }
 /*End body*/
 
-/* content*/
+/* Content*/
 .page-content{
       min-height: calc(100vh - 56px);
 }
-/*end content*/
+/*End Content*/
 
 /*Home Page*/
 .callout-container {
@@ -17,12 +17,30 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: dimgrey;
+  background-color: #8f8f8f;
   display: flex;
   height: 100vh;
   justify-content: center;
   position: relative;
 }
+
+#landing-text {
+    color: #ffffff;
+    font-family: 'Expo',sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 10px 10px 40px #fafafa;
+    margin-bottom: 50px;
+    margin-top: 20%; 
+} 
+@media screen and (max-width: 768px) {
+  #landing-text {
+    font-size:10px;
+    margin-top: 30%;
+  }
+}
+/*End Home Page*/
 .gallery-img{
 display: flex;
   height: 100vh;
@@ -30,18 +48,10 @@ display: flex;
   position: relative;
 }
 
-#landing-text {
-    color: #fafafa;
-    font-family: 'Exo',sans-serif;
-    text-transform: uppercase;
-    font-size: 30px;
-    text-shadow: 10px 10px 40px #EFEAE2D6;
-    margin-bottom: 50px;
-    margin-top: 20%; 
-}
 
 
-.container-signup {
+
+.message-container {
   background: url("../image/contact.jpg") no-repeat bottom right;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -54,7 +64,7 @@ display: flex;
   position: relative;
 }
 /*End Sign up Page*/
-.login-box {
+.message-box {
   background-color: rgba(117,213,223, 0.5);
   padding: 2rem 1rem;
   margin-top: 6rem;
@@ -151,22 +161,28 @@ display: flex;
   font-family: "Expo";
 }
 div#map {min-height: 360px;}
+
+
 /*Header*/
 .navbar {
   margin-bottom: 0;
   width: 100%;
-  background-color:#4892A6
-  ;
+  background-color:#002a4e;
   border: 0;
   display: flex !important;
   padding-left: 0.6rem;
 }
-
-.navbar .navbar-brand {
+.navbar-brand {
+  font-family: "Expo";
+  font-weight: bold;
+  font-size: 30px;
+}
+.navbar  {
   font-family: "Expo";
   font-weight: bold;
   font-size: 20px;
 }
+
 .navbar .navbar-toggler {
   border: 0;
 }
@@ -181,11 +197,16 @@ div#map {min-height: 360px;}
     float: none;
     display: block;
   }
+  .navbar-brand {
+    font-size: 20px;
+  }
 }
 /*End Header*/
+
+
 /*footer*/
 .footer {
-  background-color:#4795b9; 
+  background-color:#002a4e; 
   color: #fafafa;
   min-height: 100px;
   width: 100%;
@@ -193,14 +214,14 @@ div#map {min-height: 360px;}
   margin-top: auto;
 }
 .social-links {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .social-links li a i {
   width: 32px;
   height: 32px;
-  padding: 12px 0;
+  padding: 10px 0;
   border-radius: 50%;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 7px;
   text-align: center;
   color: #fafafa;
@@ -219,8 +240,8 @@ div#map {min-height: 360px;}
   text-align: center;
 }
 /*End Footer*/
-
+/*
 a {
   color: white;
 }
-/*End Button*/
+End Button*/
