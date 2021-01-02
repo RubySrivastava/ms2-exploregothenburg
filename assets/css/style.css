@@ -145,10 +145,30 @@ body {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
-
-
 /*End About Gothenburg Page*/
 
+/*Attraction Page*/
+.page-header {
+    background-color: #002a4e;
+    color: white;
+    font-size: 20px;
+    font-family: "Expo";
+    width: 800px;
+    padding-top: 80px;
+    margin:30px;
+}
+/* End Attraction Page*/
+
+/*Restaurant Page*/
+.food-guide {
+    align-items: center;
+    text-align: center;
+    font-family: "Expo";
+    font-size: 20px;
+    padding: 50px;
+    margin: 30px;
+}
+/*End Restaurant Page*/
 /*Explore Map*/
 div#map {min-height: 360px;}
 /*End explore map*/
